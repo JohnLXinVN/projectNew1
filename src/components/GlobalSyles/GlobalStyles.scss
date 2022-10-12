@@ -1,0 +1,91 @@
+@import 'normalize.css';
+
+:root {
+    --font-family: 'APK-Protocol', sans-serif;
+    --text-color: #151719;
+    --while-color: #fff;
+    --black-color: #000;
+    --primary-color: #1fe290;
+    --background-color: #143230;
+    --container-width: 1240px;
+    --gutter: 24px;
+    --brand-stone-light: #f1efea;
+
+    --header-hight: 104px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
+    color: var(--text-color);
+    overflow-y: overlay;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    text-decoration: none;
+}
+
+//fonts
+@font-face {
+    font-family: APK-Protocol;
+    src: url('/assets/fonts/APK-Protocol-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: APK-Protocol;
+    src: url('/assets/fonts/APK-Protocol-Semi-Bold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: APK-Protocol;
+    src: url('/assets/fonts/APK-Protocol-Bold.woff2');
+    font-weight: 700;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 calc(var(--gutter) / 3);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: var(--gutter);
+    grid-row-gap: var(--gutter);
+    margin: 0;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-5 {
+    grid-column: span 5;
+    position: relative;
+}
+
+.col-7 {
+    grid-column: span 7;
+}

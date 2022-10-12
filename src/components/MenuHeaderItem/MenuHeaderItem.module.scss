@@ -1,0 +1,107 @@
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    color: var(--while-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    transition: all 0.3s ease-in-out;
+    padding: 16px 6px;
+
+    &:hover {
+        color: var(--primary-color);
+    }
+
+    .item-icon {
+        font-size: 1.3rem;
+        margin-left: 6px;
+        animation: all 0.5s ease-in-out;
+    }
+}
+
+.menu-item-icon:hover {
+    .item-icon {
+        transform: rotate(180deg);
+    }
+}
+
+.menu-inner:hover {
+    .item-icon {
+        transform: rotate(180deg);
+    }
+}
+
+.menu-children1 {
+    width: 550px;
+    padding: 0.75em;
+    border-radius: 8px;
+    background-color: var(--while-color);
+    color: var(--text-color);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 25%), 0 3px 11px rgb(0 0 0 / 10%);
+
+    .menu-inner {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1;
+    }
+}
+
+.menu-children2 {
+    width: 550px;
+    padding: 0.75em;
+    border-radius: 8px;
+    background-color: var(--while-color);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 25%), 0 3px 11px rgb(0 0 0 / 10%);
+
+    .menu-inner {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1;
+    }
+
+    .header-menu {
+        display: flex;
+        grid-gap: 0.5em;
+        gap: 0.5em;
+        align-items: center;
+        padding: 0.5em 1em;
+
+        .nameNew {
+            color: var(--text-color);
+            background-color: #1fe290;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .title {
+            position: relative;
+            display: inline-flex;
+            grid-gap: 0.5em;
+            gap: 0.5em;
+            align-items: center;
+            text-decoration: underline;
+            text-underline-offset: 0.25em;
+            color: var(--text-color);
+
+            &:hover {
+                .icon-content {
+                    transform: translateX(5px);
+                }
+            }
+        }
+
+        .content {
+            font-size: 1.56rem;
+        }
+
+        .icon-content {
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.wrapper {
+    margin-top: var(--header-hight);
+    padding: 48px 0;
+}
+
+.wrapper-slider {
+    color: var(--while-color);
+}
+
+.title {
+    font-size: 7.8rem;
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.col-5-item::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    bottom: 175px;
+    right: 20px;
+    left: 20px;
+    display: block;
+    background-color: rgba(31, 226, 144, 0.5);
+    filter: blur(50px);
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    color: var(--while-color);
+}

@@ -1,0 +1,47 @@
+.wrapper {
+    background-color: var(--background-color);
+    padding: 24px 0;
+    position: fixed;
+    z-index: 1111;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--while-color);
+    padding: 0 24px;
+}
+
+//menu-header
+
+.logo {
+    color: var(--while-color);
+}
+
+.logo-item {
+    color: var(--while-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    filter: invert(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+//action
+
+.action {
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
