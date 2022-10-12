@@ -86,6 +86,10 @@ a[href] {
     position: relative;
 }
 
+.col-6 {
+    grid-column: span 6;
+}
+
 .col-7 {
     grid-column: span 7;
 }
