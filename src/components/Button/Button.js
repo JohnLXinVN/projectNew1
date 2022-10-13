@@ -14,6 +14,7 @@ function Button({
     primary = false,
     text = false,
     backWhileBtn = false,
+    sizeS,
     textUnderLine,
     arrowDemo,
     leftIcon,
@@ -36,6 +37,7 @@ function Button({
         text,
         textUnderLine,
         arrowDemo,
+        sizeS,
     });
 
     if (to) {

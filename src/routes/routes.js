@@ -19,6 +19,8 @@ import EbookFreePlatform from '~/page/EbookFreePlatform';
 import Help from '~/page/Help';
 import Home from '~/page/Home/Home';
 import Product from '~/page/Product';
+import Download from '~/page/Download';
+import WhyPayhawk from '~/page/WhyPayhawk';
 
 const publicRoute = [
     { path: config.routes.blog, component: Blog },
@@ -45,6 +47,8 @@ const publicRoute = [
     { path: config.routes.help, component: Help },
     { path: config.routes.home, component: Home },
     { path: config.routes.product, component: Product },
+    { path: config.routes.download, component: Download },
+    { path: config.routes.whypayhawk, component: WhyPayhawk },
 ];
 
 const privateRoute = [];

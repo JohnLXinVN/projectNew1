@@ -17,6 +17,8 @@ const routes = {
     ebookfreeplatform: '/ebookfreeplatform',
     help: '/help,',
     product: './product',
+    download: '/download',
+    whypayhawk: '/whypayhawk',
 };
 
 export default routes;

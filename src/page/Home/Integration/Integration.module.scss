@@ -1,0 +1,40 @@
+.wrapper {
+    background-color: var(--background-color);
+    padding: 96px 0;
+    color: var(--while-color);
+}
+
+.title {
+    height: 100%;
+    padding: 96px 0;
+
+    .header {
+        font-size: 6.4rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .list-item {
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        display: flex;
+
+        .icon-tick {
+            width: 24px;
+            height: 24px;
+            background-color: var(--primary-color);
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-color);
+            margin-right: 8px;
+        }
+    }
+}
+
+.img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

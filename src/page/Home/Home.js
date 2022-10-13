@@ -5,6 +5,9 @@ import HomeSlider from './HomeSlider/HomeSlider';
 import Introduce from './Introduce';
 import LogoBrand from './LogoBrand/LogoBrand';
 import Solutions from './Solutions';
+import Banner from './Banner';
+import SmartCard from './SmartCard';
+import Integration from './Integration';
 
 const cx = classNames.bind(styles);
 
@@ -17,6 +20,9 @@ function Home() {
             <LogoBrand />
             <Solutions />
             <Introduce />
+            <Banner />
+            <SmartCard />
+            <Integration />
         </div>
     );
 }

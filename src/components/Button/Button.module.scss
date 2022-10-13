@@ -27,6 +27,7 @@
     color: var(--text-color);
     border-radius: 30px;
     transition: all 0.2s ease-in-out;
+    font-weight: 700;
 
     &:hover {
         padding-right: calc(2em + 10px);
@@ -88,4 +89,8 @@
 
 .iconEbook {
     margin-left: 6px;
+}
+
+.sizeS {
+    width: 170px;
 }

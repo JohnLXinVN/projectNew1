@@ -26,6 +26,8 @@ const images = {
     img1more: require('~/assets/images/img1more.svg').default,
     img3more: require('~/assets/images/img3more.svg').default,
     img4more: require('~/assets/images/img4more.svg').default,
+    iconTick: require('~/assets/images/iconTick.svg').default,
+    integrationImg: require('~/assets/images/integrationsimg.svg').default,
     img1: require('~/assets/images/img1.webp'),
     img2: require('~/assets/images/img2.webp'),
     img3: require('~/assets/images/img3.webp'),
@@ -37,6 +39,9 @@ const images = {
     imgSolution1: require('~/assets/images/img-solution1.webp'),
     imgSolution2: require('~/assets/images/img-solution2.webp'),
     imgSolution3: require('~/assets/images/img-solution3.webp'),
+    imgBanner: require('~/assets/images/img12.webp'),
+    smartCard1: require('~/assets/images/smartcard1.webp'),
+    smartCard2: require('~/assets/images/smartcard2.webp'),
 };
 
 export default images;

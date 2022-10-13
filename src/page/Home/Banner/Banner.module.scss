@@ -1,0 +1,42 @@
+.wrapper {
+    background-color: #143230;
+    height: var(--height-banner);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    color: var(--while-color);
+
+    .header-tick {
+        font-size: 1.6rem;
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+
+    .header {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-top: 8px;
+        padding-bottom: 24px;
+    }
+
+    .desc {
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding-bottom: 32px;
+    }
+}
+
+.wrap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .img-banner {
+        height: 100%;
+    }
+}
