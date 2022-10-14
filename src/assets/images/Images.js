@@ -42,6 +42,8 @@ const images = {
     imgBanner: require('~/assets/images/img12.webp'),
     smartCard1: require('~/assets/images/smartcard1.webp'),
     smartCard2: require('~/assets/images/smartcard2.webp'),
+    testimonialImg: require('~/assets/images/testimonial-img.webp'),
+    hardCard: require('~/assets/images/cardvisa.webp'),
 };
 
 export default images;

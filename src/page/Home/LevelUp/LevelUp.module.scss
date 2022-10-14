@@ -1,0 +1,45 @@
+.wrapper {
+    background-color: var(--primary-color);
+    padding: 24px 0;
+
+    .wrap {
+        padding: 80px calc(var(--gutter) / 2);
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: -26px;
+            right: -2.5rem;
+            width: 50%;
+            height: 50%;
+            border-left: 2px solid var(--while-color);
+            border-top: 2px solid var(--while-color);
+            border-top-left-radius: 50px;
+            background: transparent;
+        }
+
+        .header {
+            font-size: 5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .des {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 48px;
+        }
+
+        .block-img {
+            position: relative;
+            z-index: 1;
+
+            .img {
+                position: absolute;
+                right: 0;
+                width: 400px;
+            }
+        }
+    }
+}

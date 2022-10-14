@@ -8,21 +8,25 @@ import Solutions from './Solutions';
 import Banner from './Banner';
 import SmartCard from './SmartCard';
 import Integration from './Integration';
+import Testimonial from './Testimonial';
+import OftenAsk from './OftenAsk';
+import LevelUp from './LevelUp';
 
 const cx = classNames.bind(styles);
 
 function Home() {
     return (
         <div className={cx('wrapper')}>
-            <div className={cx('home-slider')}>
-                <HomeSlider />
-            </div>
+            <HomeSlider />
             <LogoBrand />
             <Solutions />
             <Introduce />
             <Banner />
             <SmartCard />
             <Integration />
+            <Testimonial />
+            <OftenAsk />
+            <LevelUp />
         </div>
     );
 }

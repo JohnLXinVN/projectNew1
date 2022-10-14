@@ -10,8 +10,12 @@
     padding-top: 15px;
     padding-bottom: 15px;
     position: relative;
-
     cursor: pointer;
+
+    &.black {
+        background-color: var(--black-color);
+        color: var(--while-color);
+    }
 
     + .wrapper {
         margin-left: 16px;
@@ -35,6 +39,11 @@
 
         .iconPrimary {
             right: 15px;
+        }
+
+        .blackClass {
+            right: 15px;
+            color: var(--while-color);
         }
     }
 }
@@ -77,14 +86,24 @@
     }
 }
 
+.bgBlack {
+    background-color: var(--black-color);
+    color: var(--while-color);
+}
+
 .icon {
     color: var(--text-color);
 }
 
-.iconPrimary {
+.iconPrimary,
+.blackClass {
     position: absolute;
     right: -15px;
     transition: all 0.2s ease-in-out;
+}
+
+.blackClass {
+    color: var(--while-color);
 }
 
 .iconEbook {

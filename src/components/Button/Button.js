@@ -14,6 +14,7 @@ function Button({
     primary = false,
     text = false,
     backWhileBtn = false,
+    blackClass,
     sizeS,
     textUnderLine,
     arrowDemo,
@@ -22,6 +23,7 @@ function Button({
     className,
     iconPrimary,
     iconEbook,
+    bgBlack,
 }) {
     let Comp = 'button';
 
@@ -38,6 +40,7 @@ function Button({
         textUnderLine,
         arrowDemo,
         sizeS,
+        bgBlack,
     });
 
     if (to) {
@@ -52,7 +55,9 @@ function Button({
         <Comp className={classes} {...props}>
             {leftIcon && <FontAwesomeIcon className={cx('icon')} icon={faArrowLeft} />}
             <span className={cx('title')}>{children}</span>
-            {rightIcon && <FontAwesomeIcon className={cx('icon', { iconPrimary, iconEbook })} icon={faArrowRight} />}
+            {rightIcon && (
+                <FontAwesomeIcon className={cx('icon', { iconPrimary, iconEbook, blackClass })} icon={faArrowRight} />
+            )}
         </Comp>
     );
 }
