@@ -21,6 +21,9 @@ import Home from '~/page/Home/Home';
 import Product from '~/page/Product';
 import Download from '~/page/Download';
 import WhyPayhawk from '~/page/WhyPayhawk';
+import Webinars from '~/page/Webinars';
+import Security from '~/page/Security';
+import UseCases from '~/page/UseCases';
 
 const publicRoute = [
     { path: config.routes.blog, component: Blog },
@@ -49,6 +52,9 @@ const publicRoute = [
     { path: config.routes.product, component: Product },
     { path: config.routes.download, component: Download },
     { path: config.routes.whypayhawk, component: WhyPayhawk },
+    { path: config.routes.webinars, component: Webinars },
+    { path: config.routes.security, component: Security },
+    { path: config.routes.usecase, component: UseCases },
 ];
 
 const privateRoute = [];

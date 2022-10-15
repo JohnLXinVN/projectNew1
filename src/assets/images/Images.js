@@ -44,6 +44,10 @@ const images = {
     smartCard2: require('~/assets/images/smartcard2.webp'),
     testimonialImg: require('~/assets/images/testimonial-img.webp'),
     hardCard: require('~/assets/images/cardvisa.webp'),
+    iconFace: require('~/assets/images/iconFace.svg').default,
+    iconLinkedIn: require('~/assets/images/iconLinkedIn.svg').default,
+    iconTwitter: require('~/assets/images/iconTwitter.svg').default,
+    iconYoutube: require('~/assets/images/iconYoutube.svg').default,
 };
 
 export default images;

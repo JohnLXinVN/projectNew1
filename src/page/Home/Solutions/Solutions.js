@@ -50,15 +50,17 @@ function Solutions() {
                         </div>
                     </div>
                     <div className="col-3">
-                        <Link className={cx('item', 'item-see-more')} to={config.routes.product}>
-                            <div className={cx('img-block')}>
-                                <img className={cx('img')} src={images.greenLitter} alt="ảnh" />
-                                <div className={cx('content')}>
-                                    See all of solutions
-                                    <FontAwesomeIcon className={cx('icon-right')} icon={faArrowRight} />
+                        <div className={cx('item-see-more')}>
+                            <Link className={cx('item')} to={config.routes.product}>
+                                <div className={cx('img-block')}>
+                                    <img className={cx('img')} src={images.greenLitter} alt="ảnh"></img>
+                                    <div className={cx('content')}>
+                                        See all of solutions
+                                        <FontAwesomeIcon className={cx('icon-right')} icon={faArrowRight} />
+                                    </div>
                                 </div>
-                            </div>
-                        </Link>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ const routes = {
     customers: '/customers',
     ebooks: '/ebooks',
     integrations: '/integrations',
-    invoiceManagement: '/invoiceManagement',
+    invoiceManagement: '/invoicemanagement',
     login: '/login',
     podcast: '/podcast',
     pricing: '/pricing',
@@ -19,6 +19,9 @@ const routes = {
     product: './product',
     download: '/download',
     whypayhawk: '/whypayhawk',
+    webinars: '/webinars',
+    security: '/security',
+    usecase: '/usecase',
 };
 
 export default routes;
