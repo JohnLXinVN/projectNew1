@@ -1,0 +1,17 @@
+.item {
+    background-color: var(--light-green);
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .icon {
+        margin-bottom: 24px;
+    }
+    .content {
+        margin-bottom: 24px;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}

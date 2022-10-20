@@ -4,6 +4,7 @@ import styles from './SmartCard.module.scss';
 import Button from '~/components/Button';
 import config from '~/config';
 import images from '~/assets/images';
+import HeaderText from '~/components/HeaderText';
 
 const cx = classNames.bind(styles);
 
@@ -13,14 +14,12 @@ function SmartCard() {
             <div className="container">
                 <div className="row">
                     <div className="shift-2">
-                        <div className={cx('header')}>
-                            <h1 className={cx('title')}>The smart card just got smarter</h1>
-                            <h3 className={cx('des')}>
-                                Card-first but solution-oriented. Payhawk-powered tech enables you to move from portal
-                                to app without compromising your ability to do business. Our scalable product means that
-                                you have a holistic solution to easily manage global spend.
-                            </h3>
-                        </div>
+                        <HeaderText
+                            title="The smart card just got smarter"
+                            des="Card-first but solution-oriented. Payhawk-powered tech enables you to move from portal
+                            to app without compromising your ability to do business. Our scalable product means that
+                            you have a holistic solution to easily manage global spend."
+                        />
                     </div>
                 </div>
             </div>

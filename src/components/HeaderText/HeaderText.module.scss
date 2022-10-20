@@ -1,0 +1,19 @@
+.header {
+    padding-top: 96px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        font-size: var(--font-size-header);
+        font-weight: var(--font-weight-header);
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}
