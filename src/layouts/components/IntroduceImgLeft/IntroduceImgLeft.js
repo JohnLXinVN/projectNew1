@@ -3,6 +3,7 @@ import ListItemCard from '~/page/BusinessTravelExpenses/ListItemCard';
 
 import styles from './IntroduceImgLeft.module.scss';
 import Button from '~/components/Button';
+import TitleTag from '~/components/TitleTag';
 
 const cx = classNames.bind(styles);
 
@@ -20,11 +21,13 @@ function IntroduceImgLeft({
     content2,
     btnBlackWhile,
     toBtn,
+    tag,
+    noPaddingWrap,
 }) {
     return (
         <>
             <div className={cx('content-img-left', 'content-list')}>
-                <div className={cx('container-children')}>
+                <div className={cx('container-children', noPaddingWrap && 'no-padding')}>
                     <div className="row">
                         <div className="col-6">
                             <div className={cx('img')}>
@@ -34,6 +37,7 @@ function IntroduceImgLeft({
                         </div>
                         <div className="col-6">
                             <div className={cx('wrap')}>
+                                {tag && <TitleTag data={tag} />}
                                 {title && <h1 className={cx('title')}>{title}</h1>}
                                 {listItemBusinessTravelExpenses && <ListItemCard />}
                                 {content && <div className={cx('content')}>{content}</div>}

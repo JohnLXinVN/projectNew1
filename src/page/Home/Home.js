@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
 import HomeSlider from './HomeSlider/HomeSlider';
 import Introduce from './Introduce';
-import LogoBrand from './LogoBrand/LogoBrand';
+import LogoBrand from '~/components/LogoBrand';
 import Solutions from './Solutions';
 import Banner from './Banner';
 import SmartCard from './SmartCard';

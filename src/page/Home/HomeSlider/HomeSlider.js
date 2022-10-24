@@ -34,7 +34,7 @@ function HomeSlider() {
                             <Button primary rightIcon arrowDemo iconPrimary to={config.routes.demo}>
                                 Schedule a demo
                             </Button>
-                            <Button backWhileBtn to={config.routes.pricing}>
+                            <Button blackWhileBtn to={config.routes.pricing}>
                                 Open an account
                             </Button>
                         </div>

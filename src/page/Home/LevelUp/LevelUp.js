@@ -24,7 +24,7 @@ function LevelUp() {
                                 <Button primary blackClass bgBlack rightIcon arrowDemo to={config.routes.demo}>
                                     Schedule a demo
                                 </Button>
-                                <Button backWhileBtn to={config.routes.pricing}>
+                                <Button blackWhileBtn to={config.routes.pricing}>
                                     Open an account
                                 </Button>
                             </div>

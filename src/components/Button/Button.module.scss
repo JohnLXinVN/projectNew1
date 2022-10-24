@@ -11,6 +11,7 @@
     padding-bottom: 15px;
     position: relative;
     cursor: pointer;
+    border-radius: 30px;
 
     &.black {
         background-color: var(--black-color);
@@ -29,7 +30,6 @@
 .primary {
     background-color: var(--primary-color);
     color: var(--text-color);
-    border-radius: 30px;
     transition: all 0.2s ease-in-out;
     font-weight: 700;
 
@@ -48,7 +48,7 @@
     }
 }
 
-.backWhileBtn {
+.blackWhileBtn {
     -webkit-appearance: none;
     -webkit-font-smoothing: inherit;
     -moz-osx-font-smoothing: inherit;
@@ -61,8 +61,6 @@
     overflow: visible;
     padding: 1em 2.5em;
     margin: 0 0.5rem 0 0;
-    border: 1px solid transparent;
-    border-radius: 30px;
     font-weight: 700;
     transition: all 0.3s ease-in-out;
     background-color: var(--while-color);
@@ -91,6 +89,11 @@
     color: var(--while-color);
 }
 
+.bgWhile {
+    background-color: var(--while-color);
+    color: var(--text-color);
+}
+
 .icon {
     color: var(--text-color);
 }
@@ -112,4 +115,18 @@
 
 .sizeS {
     width: 170px;
+}
+
+.btnWhileBlack {
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: 1px solid var(--black-color);
+    background-color: var(--while-color);
+    color: var(--black-color);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: var(--while-color);
+        background-color: var(--black-color);
+    }
 }

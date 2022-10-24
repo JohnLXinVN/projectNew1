@@ -13,7 +13,7 @@ function Button({
     href,
     primary = false,
     text = false,
-    backWhileBtn = false,
+    blackWhileBtn = false,
     blackClass,
     sizeS,
     textUnderLine,
@@ -24,6 +24,8 @@ function Button({
     iconPrimary,
     iconEbook,
     bgBlack,
+    bgWhile,
+    btnWhileBlack,
 }) {
     let Comp = 'button';
 
@@ -34,13 +36,15 @@ function Button({
 
     const classes = cx('wrapper', {
         [className]: className,
-        backWhileBtn,
+        blackWhileBtn,
         primary,
         text,
         textUnderLine,
         arrowDemo,
         sizeS,
         bgBlack,
+        bgWhile,
+        btnWhileBlack,
     });
 
     if (to) {

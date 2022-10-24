@@ -1,0 +1,40 @@
+.container-children {
+    padding: 0 96px;
+
+    &.no-padding {
+        padding: 0;
+    }
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.content-img-right {
+    padding: 48px 0;
+
+    .wrap {
+        padding-right: 96px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.block {
+    aspect-ratio: 16/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--green-mint-color);
+    box-shadow: 0 0 0.77615px rgb(1 5 37 / 24%), 0 2.32845px 9.31379px #01052517;
+}

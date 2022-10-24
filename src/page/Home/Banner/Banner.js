@@ -20,7 +20,7 @@ function Banner() {
                                 Payhawk today.
                             </h3>
 
-                            <Button sizeS backWhileBtn to={config.routes.download}>
+                            <Button sizeS blackWhileBtn to={config.routes.download}>
                                 Download
                             </Button>
                         </div>

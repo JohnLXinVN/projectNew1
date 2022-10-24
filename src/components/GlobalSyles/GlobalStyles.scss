@@ -11,6 +11,7 @@
     --light-green: #e9fdf3;
     --font-size-header: 4.8rem;
     --font-weight-header: 700;
+    --green-mint-color: #d2fae6;
 
     --gutter: 24px;
     --height-banner: 604px;
@@ -133,4 +134,24 @@ a[href] {
 
 .col-12 {
     grid-column: span 12;
+}
+
+.mt-96 {
+    margin-top: 96px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.ml-32 {
+    margin-left: 32px;
+}
+
+.bg-light-green {
+    background-color: var(--light-green);
+}
+
+.bg-black-green {
+    background-color: var(--background-color);
 }

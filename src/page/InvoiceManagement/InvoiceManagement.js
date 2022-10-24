@@ -1,5 +1,7 @@
+import BillPayments from '../BillPayments';
+
 function InvoiceManagement() {
-    return <h1>InvoiceManagement</h1>;
+    return <BillPayments />;
 }
 
 export default InvoiceManagement;
