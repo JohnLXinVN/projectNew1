@@ -12,6 +12,7 @@
     --font-size-header: 4.8rem;
     --font-weight-header: 700;
     --green-mint-color: #d2fae6;
+    --gray-color: #748190;
 
     --gutter: 24px;
     --height-banner: 604px;
@@ -136,12 +137,20 @@ a[href] {
     grid-column: span 12;
 }
 
+.mt-48 {
+    margin-top: 48px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
 .mt-96 {
     margin-top: 96px;
 }
 
-.mt-48 {
-    margin-top: 48px;
+.mb-96 {
+    margin-bottom: 96px;
 }
 
 .ml-32 {
@@ -154,4 +163,8 @@ a[href] {
 
 .bg-black-green {
     background-color: var(--background-color);
+}
+
+.text-while {
+    color: var(--while-color);
 }

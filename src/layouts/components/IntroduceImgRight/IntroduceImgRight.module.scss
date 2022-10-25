@@ -1,9 +1,5 @@
 .container-children {
-    padding: 0 96px;
-
-    &.no-padding {
-        padding: 0;
-    }
+    padding: 0;
 }
 
 .img {
@@ -36,7 +32,7 @@
 }
 
 .content-img-right {
-    padding: 48px 0;
+    padding: 48px 0 96px 0;
 
     .wrap {
         padding-right: 96px;
@@ -59,16 +55,18 @@
 }
 
 .title1,
-.title2 {
+.title2,
+.title3 {
     font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     line-height: 1.2;
 }
 
 .content1,
-.content2 {
-    margin-bottom: 16px;
+.content2,
+.content3 {
+    margin-bottom: 28px;
 }
 
 .block-btn,

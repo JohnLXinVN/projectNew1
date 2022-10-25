@@ -18,6 +18,8 @@ function IntroduceImgRight({
     content1,
     title2,
     content2,
+    title3,
+    content3,
     toBtn,
     btnWhileBlack,
     tag,
@@ -37,6 +39,9 @@ function IntroduceImgRight({
                                 {content1 && <div className={cx('content1')}>{content1}</div>}
                                 {title2 && <h1 className={cx('title2')}>{title2}</h1>}
                                 {content2 && <div className={cx('content2')}>{content2}</div>}
+                                {title3 && <h1 className={cx('title3')}>{title3}</h1>}
+                                {content3 && <div className={cx('content3')}>{content3}</div>}
+
                                 <div className={cx('btn')}>
                                     {btnBlackWhile && (
                                         <div className={cx('block-btn')}>

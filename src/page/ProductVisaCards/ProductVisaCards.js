@@ -7,7 +7,8 @@ import ChooseCard from './ChooseCard';
 import ControlGlobal from './ControlGlobal';
 import EasyExpenseReporting from './EasyExpenseReporting';
 import StreamlinedTeamSpend from './StreamlinedTeamSpend';
-import Video from './Video';
+import Video from '~/layouts/components/Video';
+import video from '~/assets/video';
 
 function ProductVisaCards() {
     return (
@@ -19,7 +20,7 @@ function ProductVisaCards() {
             />
             <ChooseCard />
             <CardManagement />
-            <Video />
+            <Video src={video.cardVideo} />
             <StreamlinedTeamSpend />
             <ControlGlobal />
             <EasyExpenseReporting />
