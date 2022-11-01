@@ -93,8 +93,12 @@ function MenuHeaderItem() {
             ],
         },
         {
-            name: 'Customer Stories',
+            name: 'Customer',
             to: config.routes.customers,
+        },
+        {
+            name: 'Partners',
+            to: config.routes.partners,
         },
         {
             name: 'Pricing',

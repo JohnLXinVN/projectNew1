@@ -97,10 +97,28 @@ function BusinessTravelExpenses() {
             </div>
             <FAQs
                 header="Have a question?"
-                headerContent1="Can I connect Payhawk to TravelPerk?"
-                content1="Yes, you can! The integration facilitates automated reconciliation of all TravelPerk expenses made with the Payhawk company card. The integration fetches the invoices from TravelPerk and matches them to the transactions done with the card. Read more about it here."
-                headerContent2="Is it safe to do employee reimbursements via Payhawk?"
-                content2="Yes, it is safe. Payhawk connects directly to your employee’s bank account and lets you complete the transfer via SEPA Instant or Faster Payments. Read more here"
+                lists={[
+                    {
+                        id: 1,
+                        title: 'Can I connect Payhawk to TravelPerk?',
+                        des: 'Yes, you can! The integration facilitates automated reconciliation of all TravelPerk expenses made with the Payhawk company card. The integration fetches the invoices from TravelPerk and matches them to the transactions done with the card. Read more about it here.',
+                    },
+                    {
+                        id: 2,
+                        title: 'Is it safe to do employee reimbursements via Payhawk?',
+                        des: 'Yes, it is safe. Payhawk connects directly to your employee’s bank account and lets you complete the transfer via SEPA Instant or Faster Payments. Read more here',
+                    },
+                    {
+                        id: 3,
+                        title: 'How does Payhawk calculate the per diem expense? ',
+                        des: 'Once the per diem rates are set in the portal, employees simply need to enter travel data. Then, Payhawk will automatically calculate the per diem reimbursement amount for the employee. Read more here and also here.',
+                    },
+                    {
+                        id: 3,
+                        title: 'How does Payhawk calculate the mileage expense? ',
+                        des: "The employee will first use Google Maps to help make their mileage expense. Then, once your business's mileage rates are set in the portal, Payhawk will multiply this rate by the KM provided by the employee in Google Maps. Read more here.",
+                    },
+                ]}
             />
             <LevelUp />
         </div>

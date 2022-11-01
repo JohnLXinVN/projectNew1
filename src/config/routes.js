@@ -22,6 +22,7 @@ const routes = {
     webinars: '/webinars',
     security: '/security',
     usecase: '/usecase',
+    partners: '/partners',
 };
 
 export default routes;

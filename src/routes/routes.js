@@ -24,6 +24,7 @@ import WhyPayhawk from '~/page/WhyPayhawk';
 import Webinars from '~/page/Webinars';
 import Security from '~/page/Security';
 import UseCases from '~/page/UseCases';
+import Partners from '~/page/Partners';
 
 const publicRoute = [
     { path: config.routes.blog, component: Blog },
@@ -55,6 +56,7 @@ const publicRoute = [
     { path: config.routes.webinars, component: Webinars },
     { path: config.routes.security, component: Security },
     { path: config.routes.usecase, component: UseCases },
+    { path: config.routes.partners, component: Partners },
 ];
 
 const privateRoute = [];

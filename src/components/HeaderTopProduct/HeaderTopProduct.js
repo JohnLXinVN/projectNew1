@@ -6,7 +6,15 @@ import config from '~/config';
 
 const cx = classNames.bind(styles);
 
-function HeaderTopProduct({ headerText, des, img }) {
+function HeaderTopProduct({
+    headerText,
+    des,
+    img,
+    btnLeft = 'Schedule a demo',
+    btnRight = 'Open an account',
+    toBtnLeft = config.routes.demo,
+    toBtnRight = config.routes.pricing,
+}) {
     return (
         <div className={cx('wrapper')}>
             <div className="container">
@@ -16,11 +24,11 @@ function HeaderTopProduct({ headerText, des, img }) {
                             <div className={cx('header')}>{headerText}</div>
                             <div className={cx('des')}>{des}</div>
                             <div className={cx('btn')}>
-                                <Button primary rightIcon arrowDemo iconPrimary to={config.routes.demo}>
-                                    Schedule a demo
+                                <Button primary rightIcon arrowDemo iconPrimary to={toBtnLeft}>
+                                    {btnLeft}
                                 </Button>
-                                <Button blackWhileBtn to={config.routes.pricing}>
-                                    Open an account
+                                <Button blackWhileBtn to={toBtnRight}>
+                                    {btnRight}
                                 </Button>
                             </div>
                         </div>

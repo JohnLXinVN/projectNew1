@@ -1,0 +1,30 @@
+.wrapper {
+    background-color: var(--brand-stone-light);
+    padding: 24px 0;
+
+    .content {
+        padding: 32px 0 96px 0;
+
+        .block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 1.5rem;
+
+            .img {
+                margin-bottom: 18px;
+            }
+
+            .title {
+                font-weight: 600;
+                font-size: 2.5rem;
+            }
+
+            .des {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

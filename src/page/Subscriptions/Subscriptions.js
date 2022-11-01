@@ -101,11 +101,24 @@ function Subscriptions() {
             <TestimonialSlider />
 
             <FAQs
-                header="FAQ"
-                headerContent1=" What is subscription management software?"
-                content1="Subscription management software is software that tracks recurring payments. At Payhawk, our customers can use the in-built subscription management feature to mark recurring payments. Our software automatically highlights payments that could be potential subscriptions. This means your finance team has better visibility of cash flow to forecast spending and influence budgets. And ​​that your accounts will always be topped up to cover upcoming recurring costs."
-                headerContent2=" Is subscription management software good for growing businesses?"
-                content2="Subscription management is very important for growing businesses. From office rent to HR tools, recurring payments are huge for companies of all sizes. All organisations, especially growing businesses, need to keep a close eye on spending and cash flow. Companies can avoid cost creep and duplicate payments by using subscription management software and ensure they never miss an important payment. Spend visibility is vital for growing businesses, and clarity over recurring spending can inform budget decision-making and forecasting."
+                header="What CFOs often ask about"
+                lists={[
+                    {
+                        id: 1,
+                        title: ' What is subscription management software?',
+                        des: 'Subscription management software is software that tracks recurring payments. At Payhawk, our customers can use the in-built subscription management feature to mark recurring payments. Our software automatically highlights payments that could be potential subscriptions. This means your finance team has better visibility of cash flow to forecast spending and influence budgets. And ​​that your accounts will always be topped up to cover upcoming recurring costs.',
+                    },
+                    {
+                        id: 2,
+                        title: ' Is subscription management software good for growing businesses?',
+                        des: 'Subscription management is very important for growing businesses. From office rent to HR tools, recurring payments are huge for companies of all sizes. All organisations, especially growing businesses, need to keep a close eye on spending and cash flow. Companies can avoid cost creep and duplicate payments by using subscription management software and ensure they never miss an important payment. Spend visibility is vital for growing businesses, and clarity over recurring spending can inform budget decision-making and forecasting.',
+                    },
+                    {
+                        id: 3,
+                        title: ' What is the cost of subscription management software?',
+                        des: 'With Payhawk, our subscription management feature is built into the tool. Your business pays for their plan as normal with no extra charge to use the subscription management software.',
+                    },
+                ]}
             />
             <LevelUp />
         </div>

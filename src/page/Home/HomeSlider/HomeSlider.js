@@ -1,5 +1,7 @@
 import classNames from 'classnames/bind';
 import { Swiper, SwiperSlide } from 'swiper/react';
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper';
 
 // Import Swiper React components
 import images from '~/assets/images';
@@ -8,9 +10,6 @@ import images from '~/assets/images';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper';
 
 import styles from './HomeSlider.module.scss';
 import Button from '~/components/Button';

@@ -26,6 +26,8 @@ function Button({
     bgBlack,
     bgWhile,
     btnWhileBlack,
+    fullWidth,
+    noBorder,
 }) {
     let Comp = 'button';
 
@@ -45,6 +47,8 @@ function Button({
         bgBlack,
         bgWhile,
         btnWhileBlack,
+        fullWidth,
+        noBorder,
     });
 
     if (to) {

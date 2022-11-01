@@ -3,19 +3,22 @@ import classNames from 'classnames/bind';
 import { useState } from 'react';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
+import React from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 import styles from './FAQs.module.scss';
 
 const cx = classNames.bind(styles);
 
-function FAQs({ header, headerContent1, content1, headerContent2, content2 }) {
-    const [open1, setOpen1] = useState(false);
-    const [open2, setOpen2] = useState(false);
+function FAQs({ header, lists }) {
+    const [expanded, setExpanded] = useState(false);
 
-    const handleClick1 = () => {
-        setOpen1(!open1);
-    };
-    const handleClick2 = () => {
-        setOpen2(!open2);
+    const handleChange = (panel) => (event, isExpanded) => {
+        setExpanded(isExpanded ? panel : false);
     };
     return (
         <div className={cx('wrapper')}>
@@ -24,28 +27,30 @@ function FAQs({ header, headerContent1, content1, headerContent2, content2 }) {
                 <div className="row">
                     <div className="shift-1">
                         <div className={cx('item')}>
-                            <div onClick={handleClick1} className={cx('title')}>
-                                <h2>{headerContent1}</h2>
-                                <FontAwesomeIcon icon={faChevronDown} />
-                            </div>
-                            {open1 && (
-                                <div className={cx('des')}>
-                                    <p>{content1}</p>
+                            {lists.map((list) => (
+                                <div className={cx('block-handle')} key={list.id}>
+                                    <Accordion
+                                        className={cx('wrap')}
+                                        expanded={expanded === `panel${list.id}`}
+                                        onChange={handleChange(`panel${list.id}`)}
+                                    >
+                                        <AccordionSummary
+                                            aria-controls={`panel${list.id}bh-content`}
+                                            id={`panel${list.id}bh-header`}
+                                        >
+                                            <Typography className={cx('title')}>
+                                                <h2>{list.title}</h2>
+                                                <div className={cx('icon')}>
+                                                    <FontAwesomeIcon icon={faChevronDown} />
+                                                </div>
+                                            </Typography>
+                                        </AccordionSummary>
+                                        <AccordionDetails>
+                                            <Typography className={cx('des')}>{list.des}</Typography>
+                                        </AccordionDetails>
+                                    </Accordion>
                                 </div>
-                            )}
-                        </div>
-                    </div>
-                    <div className="shift-1">
-                        <div className={cx('item')}>
-                            <div onClick={handleClick2} className={cx('title')}>
-                                <h2>{headerContent2}</h2>
-                                <FontAwesomeIcon icon={faChevronDown} />
-                            </div>
-                            {open2 && (
-                                <div className={cx('des')}>
-                                    <p>{content2}</p>
-                                </div>
-                            )}
+                            ))}
                         </div>
                     </div>
                 </div>

@@ -116,6 +116,19 @@ const images = {
     imgSubscriptions5: require('~/assets/images/subscriptions/img-subscriptions5.svg').default,
     imgSubscriptions6: require('~/assets/images/subscriptions/img-subscriptions6.webp'),
     imgSubscriptions7: require('~/assets/images/subscriptions/img-subscriptions7.webp'),
+    imgCustomers1: require('~/assets/images/imgCustomers/imgCustomers1.webp'),
+    imgCustomers2: require('~/assets/images/imgCustomers/imgCustomers2.webp'),
+    imgCustomers3: require('~/assets/images/imgCustomers/imgCustomers3.webp'),
+    imgCustomers4: require('~/assets/images/imgCustomers/imgCustomers4.webp'),
+    imgPartners1: require('~/assets/images/imgPartners/imgPartners1.webp'),
+    imgPartners2: require('~/assets/images/imgPartners/imgPartners2.svg').default,
+    imgPartners3: require('~/assets/images/imgPartners/imgPartners3.svg').default,
+    imgPartners4: require('~/assets/images/imgPartners/imgPartners4.svg').default,
+    imgPartners5: require('~/assets/images/imgPartners/imgPartners5.webp'),
+    imgPartners6: require('~/assets/images/imgPartners/imgPartners6.webp'),
+    imgPartners7: require('~/assets/images/imgPartners/imgPartners7.webp'),
+    imgPartners8: require('~/assets/images/imgPartners/imgPartners8.webp'),
+    imgPartners9: require('~/assets/images/imgPartners/imgPartners9.webp'),
 };
 
 export default images;

@@ -1,31 +1,52 @@
+import classNames from 'classnames/bind';
 import images from '~/assets/images';
 import FAQs from '~/components/FAQs';
+import HeaderText from '~/components/HeaderText';
 import HeaderTopProduct from '~/components/HeaderTopProduct';
+import IntroduceImgLeft from '~/layouts/components/IntroduceImgLeft';
 import LevelUp from '../Home/LevelUp';
-import CardManagement from './CardManagement';
-import ChooseCard from './ChooseCard';
-import ControlGlobal from './ControlGlobal';
-import EasyExpenseReporting from './EasyExpenseReporting';
-import StreamlinedTeamSpend from './StreamlinedTeamSpend';
-import Video from '~/layouts/components/Video';
-import video from '~/assets/video';
+import DesJoin from './DesJoin';
+import FormSubmit from './FormSubmit';
+import ListSelectPartners from './ListSelectPartners';
 
-function ProductVisaCards() {
+import styles from './Partners.module.scss';
+import SolutionPartner from './SolutionPartner';
+import TestimonialPlain from './TestimonialPlain';
+
+const cx = classNames.bind(styles);
+
+function Partners() {
     return (
-        <div className={'wrapper'}>
+        <div className={cx('wrapper')}>
             <HeaderTopProduct
-                headerText="The most efficient corporate Visa Cards for businesses"
-                des="Visa Credit and Visa Debit cards backed by powerful software to control your company’s spending."
-                img={images.imgProductCard1}
+                headerText="Payhawk’s Solution Partner Program"
+                des="Join a network of professional services partners with key competencies in integration and customisation services for ERPs, HCM systems, accounting systems and other business tools."
+                img={images.imgPartners1}
+                btnLeft="Join a program"
+                btnRight="Request services"
             />
-            <ChooseCard />
-            <CardManagement />
-            <Video src={video.cardVideo} />
-            <StreamlinedTeamSpend />
-            <ControlGlobal />
-            <EasyExpenseReporting />
+            <div className="container">
+                <HeaderText title="Join our network" />
+
+                <DesJoin />
+            </div>
+            <SolutionPartner />
+            <div className={cx('wrapper-introduce')}>
+                <div className="container">
+                    <IntroduceImgLeft
+                        title="What can you expect when you become a Partner?"
+                        content="Payhawk is present in more than 32 countries across two continents. Our customer-centric organisation and the product-oriented team have helped us disrupt the expense management market, by combining company cards, expenses and bill payments."
+                        images={images.imgPartners5}
+                        imgWidthFull
+                    />
+                </div>
+            </div>
+            <HeaderText title="Become a partner, and you'll get:" />
+            <ListSelectPartners />
+            <FormSubmit />
+            <TestimonialPlain />
             <FAQs
-                header="What CFOs often ask about"
+                header="Have a question?"
                 lists={[
                     {
                         id: 1,
@@ -40,7 +61,7 @@ function ProductVisaCards() {
                     {
                         id: 3,
                         title: 'What can we use corporate Visa cards for?',
-                        des: "Your business can use corporate visa cards for any legitimate business activities it needs. (Refer to terms and conditions of the card carrier for more information). Your card users/ employees simply need to make a payment with the debit or credit card, snap or download a receipt, upload it to the app, add a small bit of info, and they're done. The expense then shows in real-time so that the finance team can check spend, keep track of budgeting, and create realistic forecasts. The supporting software for the virtual and physical company cards also lets the finance team set limits and add approval workflows according to company policy so that the business can implement good spend control and governance.",
+                        des: 'Your business can use corporate visa cards for any legitimate business activities it needs. (Refer to terms and conditions of the card carrier for more information). Your card users/ employees simply need to make a payment with the debit or credit card, snap or download a receipt, upload it to the app, add a small bit of info, and theyre done. The expense then shows in real-time so that the finance team can check spend, keep track of budgeting, and create realistic forecasts. The supporting software for the virtual and physical company cards also lets the finance team set limits and add approval workflows according to company policy so that the business can implement good spend control and governance.',
                     },
                     {
                         id: 4,
@@ -54,4 +75,4 @@ function ProductVisaCards() {
     );
 }
 
-export default ProductVisaCards;
+export default Partners;

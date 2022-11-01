@@ -13,6 +13,10 @@
     --font-weight-header: 700;
     --green-mint-color: #d2fae6;
     --gray-color: #748190;
+    --brand-stone: #e3ded5;
+    --border-gray: #d9d9d9;
+    --gray: #748190;
+    --brand-mint-light: #e9fdf3;
 
     --gutter: 24px;
     --height-banner: 604px;
@@ -155,6 +159,14 @@ a[href] {
 
 .ml-32 {
     margin-left: 32px;
+}
+
+.pt-96 {
+    padding-top: 96px;
+}
+
+.pb-96 {
+    padding-bottom: 96px;
 }
 
 .bg-light-green {

@@ -1,0 +1,27 @@
+.wrapper {
+    margin-top: var(--header-hight);
+}
+
+.block-item {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    padding: 26px;
+    position: relative;
+    z-index: 22;
+    transform: translateY(-50%);
+
+    h1 {
+        font-size: 8rem;
+        font-weight: 600;
+    }
+
+    h5 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .des {
+        font-size: 1.6rem;
+    }
+}
