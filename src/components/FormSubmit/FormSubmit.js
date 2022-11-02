@@ -1,21 +1,30 @@
 import classNames from 'classnames/bind';
 import Button from '~/components/Button';
+import HeaderText from '../HeaderText';
 
 import styles from './FormSubmit.module.scss';
 
 const cx = classNames.bind(styles);
 
-function FormSubmit() {
+function FormSubmit({ heading, title, des, img }) {
     return (
         <div className={cx('wrapper')}>
             <div className="container">
+                {heading && (
+                    <div className="container">
+                        <div className={cx('heading-wrap')}>
+                            <h1>{heading}</h1>
+                        </div>
+                    </div>
+                )}
+
                 <div className="row">
                     <div className="col-6">
                         <div className={cx('content')}>
-                            <h3 className={cx('title')}>How can you become a Payhawk partner?</h3>
-                            <div className={cx('des')}>
-                                Please fill in the form and our Partnerships Team will contact you within 48 hours to
-                                discuss your application and explain the next steps.
+                            {title && <h3 className={cx('title')}>{title}</h3>}
+                            {des && <div className={cx('des')}>{des}</div>}
+                            <div className={cx('wrap-img')}>
+                                <img src={img} alt="" />
                             </div>
                         </div>
                     </div>

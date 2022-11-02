@@ -33,6 +33,20 @@
     transition: all 0.2s ease-in-out;
     font-weight: 700;
 
+    &.btnGreenBlack {
+        background-color: var(--primary-color);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: var(--black-color);
+            color: var(--while-color);
+
+            .icon {
+                color: var(--while-color);
+            }
+        }
+    }
+
     &:hover {
         padding-right: calc(2em + 10px);
         padding-left: calc(1em + 10px);

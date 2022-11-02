@@ -1,0 +1,35 @@
+.wrapper {
+    margin-top: var(--header-hight);
+}
+
+.inset-text {
+    margin: 32px 0;
+
+    .inset-text-inner {
+        padding: 64px;
+        background-color: var(--brand-stone);
+        border-radius: 10px;
+
+        .wrap-text-left {
+            p {
+                margin-bottom: 16px;
+            }
+
+            strong {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.wrap-text-right {
+    .item {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 8px;
+
+        .icon {
+            margin-right: 6px;
+        }
+    }
+}

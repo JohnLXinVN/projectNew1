@@ -81,3 +81,27 @@
     border: none;
     margin-top: 16px;
 }
+
+.content {
+    .wrap-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 75%;
+        }
+    }
+}
+
+.heading-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+
+    h1 {
+        font-size: var(--font-size-header);
+    }
+}

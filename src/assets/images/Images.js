@@ -129,6 +129,10 @@ const images = {
     imgPartners7: require('~/assets/images/imgPartners/imgPartners7.webp'),
     imgPartners8: require('~/assets/images/imgPartners/imgPartners8.webp'),
     imgPartners9: require('~/assets/images/imgPartners/imgPartners9.webp'),
+    imgEbookFree1: require('~/assets/images/ebookfreeplatform/ebookfree1.webp'),
+    imgEbookFree2: require('~/assets/images/ebookfreeplatform/ebookfree2.svg').default,
+    imgEbookFree3: require('~/assets/images/ebookfreeplatform/ebookfree3.svg').default,
+    imgEbookFree4: require('~/assets/images/ebookfreeplatform/ebookfree4.svg').default,
 };
 
 export default images;

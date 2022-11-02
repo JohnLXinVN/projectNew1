@@ -6,7 +6,7 @@ import HeaderTopProduct from '~/components/HeaderTopProduct';
 import IntroduceImgLeft from '~/layouts/components/IntroduceImgLeft';
 import LevelUp from '../Home/LevelUp';
 import DesJoin from './DesJoin';
-import FormSubmit from './FormSubmit';
+import FormSubmit from '../../components/FormSubmit';
 import ListSelectPartners from './ListSelectPartners';
 
 import styles from './Partners.module.scss';
@@ -43,7 +43,10 @@ function Partners() {
             </div>
             <HeaderText title="Become a partner, and you'll get:" />
             <ListSelectPartners />
-            <FormSubmit />
+            <FormSubmit
+                title="How can you become a Payhawk partner?"
+                des="Please fill in the form and our Partnerships Team will contact you within 48 hours to discuss your application and explain the next steps."
+            />
             <TestimonialPlain />
             <FAQs
                 header="Have a question?"
