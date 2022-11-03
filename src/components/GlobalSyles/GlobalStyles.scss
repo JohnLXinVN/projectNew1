@@ -16,6 +16,7 @@
     --brand-stone: #e3ded5;
     --border-gray: #d9d9d9;
     --gray: #748190;
+    --light-gray-color: #eaedf0;
     --brand-mint-light: #e9fdf3;
     --theme-green-400: #e7f9f0;
     --brand-stone: #e3ded5;
@@ -169,6 +170,10 @@ a[href] {
 
 .pb-96 {
     padding-bottom: 96px;
+}
+
+.pd-96 {
+    padding: 96px;
 }
 
 .bg-light-green {

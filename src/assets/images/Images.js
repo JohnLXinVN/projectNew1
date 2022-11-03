@@ -133,6 +133,10 @@ const images = {
     imgEbookFree2: require('~/assets/images/ebookfreeplatform/ebookfree2.svg').default,
     imgEbookFree3: require('~/assets/images/ebookfreeplatform/ebookfree3.svg').default,
     imgEbookFree4: require('~/assets/images/ebookfreeplatform/ebookfree4.svg').default,
+    imgDemo1: require('~/assets/images/imgDemo/imgDemo1.svg').default,
+    imgDemo2: require('~/assets/images/imgDemo/imgDemo2.svg').default,
+    imgDemo3: require('~/assets/images/imgDemo/imgDemo3.svg').default,
+    imgDemo4: require('~/assets/images/imgDemo/imgDemo4.svg').default,
 };
 
 export default images;
