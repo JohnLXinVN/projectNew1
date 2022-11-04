@@ -1,5 +1,6 @@
 const images = {
     logo: require('~/assets/images/imgHomePage/logo.svg').default,
+    logoGoogle: require('~/assets/images/imgHomePage/logoGoogle.svg').default,
     avatarEn: require('~/assets/images/imgHomePage/en.svg').default,
     avatarDeutschland: require('~/assets/images/imgHomePage/Deutschland.svg').default,
     avatarEspanol: require('~/assets/images/imgHomePage/España.svg').default,
