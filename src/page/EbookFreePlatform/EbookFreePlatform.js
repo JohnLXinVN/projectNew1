@@ -1,9 +1,10 @@
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
+import { useEffect } from 'react';
+
 import images from '~/assets/images';
 import FormSubmit from '~/components/FormSubmit';
-import HeaderText from '~/components/HeaderText';
 import ChooseCardItem from '~/layouts/components/ChooseCardItem';
 import LevelUp from '../Home/LevelUp';
 
@@ -12,6 +13,18 @@ import styles from './EbookFreePlatform.module.scss';
 const cx = classNames.bind(styles);
 
 function EbookFreePlatform() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+            /* you can also use 'auto' behaviour
+             in place of 'smooth' */
+        });
+    };
+
+    useEffect(() => {
+        scrollToTop();
+    }, []);
     return (
         <div className={cx('wrapper')}>
             <FormSubmit

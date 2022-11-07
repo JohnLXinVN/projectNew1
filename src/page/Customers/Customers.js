@@ -1,6 +1,8 @@
 import classNames from 'classnames/bind';
-import HeaderText from '~/components/HeaderText';
+import { useEffect } from 'react';
 
+import HeaderText from '~/components/HeaderText';
+import LevelUp from '../Home/LevelUp';
 import styles from './Customers.module.scss';
 import CustomersSlider from './CustomersSlider';
 import IndustryFilter from './IndustryFilter';
@@ -8,6 +10,18 @@ import IndustryFilter from './IndustryFilter';
 const cx = classNames.bind(styles);
 
 function Customers() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+            /* you can also use 'auto' behaviour
+             in place of 'smooth' */
+        });
+    };
+
+    useEffect(() => {
+        scrollToTop();
+    }, []);
     return (
         <div className={cx('wrapper')}>
             <div className="bg-black-green text-while">
@@ -54,6 +68,7 @@ function Customers() {
             </div>
             <HeaderText title="Don’t take our word for it." des="Here's what our clients are saying:" />
             <IndustryFilter />
+            <LevelUp />
         </div>
     );
 }

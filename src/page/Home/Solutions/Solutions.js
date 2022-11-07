@@ -26,7 +26,7 @@ function Solutions() {
                         </div>
                     </div>
                     <div className="col-3">
-                        <Link className={cx('item')} to={config.routes.product}>
+                        <Link className={cx('item')} to={config.routes.billpayments}>
                             <div className={cx('img-block')}>
                                 <img className={cx('img')} src={images.imgSolution2} alt="ảnh" />
                             </div>
@@ -38,7 +38,7 @@ function Solutions() {
                         </div>
                     </div>
                     <div className="col-3">
-                        <Link className={cx('item')} to={config.routes.product}>
+                        <Link className={cx('item')} to={config.routes.billpayments}>
                             <div className={cx('img-block')}>
                                 <img className={cx('img')} src={images.imgSolution3} alt="ảnh" />
                             </div>

@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 import config from '~/config';
 import images from '~/assets/images';
@@ -8,6 +9,18 @@ import styles from './Login.module.scss';
 const cx = classNames.bind(styles);
 
 function Login() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+            /* you can also use 'auto' behaviour
+             in place of 'smooth' */
+        });
+    };
+
+    useEffect(() => {
+        scrollToTop();
+    }, []);
     return (
         <div className={cx('wrapper')}>
             <header className={cx('header')}>

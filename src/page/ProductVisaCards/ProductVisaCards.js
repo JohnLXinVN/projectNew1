@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import images from '~/assets/images';
 import FAQs from '~/components/FAQs';
 import HeaderTopProduct from '~/components/HeaderTopProduct';
@@ -11,6 +13,18 @@ import Video from '~/layouts/components/Video';
 import video from '~/assets/video';
 
 function ProductVisaCards() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+            /* you can also use 'auto' behaviour
+             in place of 'smooth' */
+        });
+    };
+
+    useEffect(() => {
+        scrollToTop();
+    }, []);
     return (
         <div className={'wrapper'}>
             <HeaderTopProduct

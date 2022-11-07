@@ -1,4 +1,6 @@
 import classNames from 'classnames/bind';
+import { useEffect } from 'react';
+
 import images from '~/assets/images';
 import FAQs from '~/components/FAQs';
 import HeaderText from '~/components/HeaderText';
@@ -16,6 +18,18 @@ import TestimonialPlain from './TestimonialPlain';
 const cx = classNames.bind(styles);
 
 function Partners() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+            /* you can also use 'auto' behaviour
+             in place of 'smooth' */
+        });
+    };
+
+    useEffect(() => {
+        scrollToTop();
+    }, []);
     return (
         <div className={cx('wrapper')}>
             <HeaderTopProduct

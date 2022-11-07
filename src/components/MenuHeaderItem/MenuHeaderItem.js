@@ -62,36 +62,7 @@ function MenuHeaderItem() {
                 },
             ],
         },
-        {
-            name: 'Resources',
-            icon: <FontAwesomeIcon icon={faChevronDown} />,
-            children2: [
-                {
-                    title: 'Blog',
-                    des: 'Insight and tips for finance teams',
-                    icon: <img className={cx('icon-img')} src={images.iconblog} alt="icon" />,
-                    to: config.routes.blog,
-                },
-                {
-                    title: 'Help Centre',
-                    des: 'Get started with , all features explained',
-                    icon: <img className={cx('icon-img')} src={images.iconhelp} alt="icon" />,
-                    to: config.routes.help,
-                },
-                {
-                    title: 'Ebooks',
-                    des: 'In-depth guides and studies',
-                    icon: <img className={cx('icon-img')} src={images.iconebook} alt="icon" />,
-                    to: config.routes.ebooks,
-                },
-                {
-                    title: 'Podcast',
-                    des: 'Feature releases and tech news',
-                    icon: <img className={cx('icon-img')} src={images.iconpodcast} alt="icon" />,
-                    to: config.routes.podcast,
-                },
-            ],
-        },
+
         {
             name: 'Customer',
             to: config.routes.customers,
